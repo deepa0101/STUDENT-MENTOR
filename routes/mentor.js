@@ -3,7 +3,7 @@ const router = express.Router();
 
 const {  mentor } = require("../db/db");
 
-router.get("/", async (req, res) => {
+router.get("/mentor", async (req, res) => {
   try {
     const data = await mentor.find();
     res.send(data);
@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/mentor", async (req, res) => {
   try {
     const data = await mentor.create({
       name: req.body.name,
