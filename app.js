@@ -1,10 +1,11 @@
 const express = require("express");
+const cors = require('cors');
 const mongoose = require("mongoose");
 const config = require("./utils/config")
 const studentRoute = require("./routes/student");
 const mentorRoute = require("./routes/mentor");
 const commonRoute = require("./routes/common");
-
+app.use(cors())
 
 const dbConnect = async () => {
   try {

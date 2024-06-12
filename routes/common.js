@@ -8,8 +8,8 @@ router.put("/assignStudent/:studentName/:mentorName", async (req, res, next) => 
     const { studentName, mentorName } = req.params;
 
     const studentdata = await student.findOne({name: studentName})
-    if(studentdata.mentorAssigned==mentorName){
-        res.send("newMentor can't be same as last Mentor")
+    if(studentdata.mentorAssigned!=[]){
+        res.send("Student already has a mentor")
     }else{
       studentdata.mentorAssigned = mentorName, 
       studentdata.mentorOverTime.push(mentorName)
