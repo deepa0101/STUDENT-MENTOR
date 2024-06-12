@@ -5,7 +5,7 @@ const config = require("./utils/config")
 const studentRoute = require("./routes/student");
 const mentorRoute = require("./routes/mentor");
 const commonRoute = require("./routes/common");
-app.use(cors())
+
 
 const dbConnect = async () => {
   try {
@@ -16,7 +16,7 @@ const dbConnect = async () => {
   }
 };
 const app = express();
-
+app.use(cors())
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
