@@ -33,12 +33,12 @@ https://student-mentor-2ic2.onrender.com/assignMentor/:studentName/:mentorName
 ****5. show all students for a particular mentor****
 APIENDPOINT:
 https://student-mentor-2ic2.onrender.com/mentorStudents/:studentName
-![getallMentorOvertime](https://github.com/deepa0101/STUDENT-MENTOR/assets/66421923/f93e0138-29e6-4126-bdab-06f649ff0964)
+![allStudentsForAMentor](https://github.com/deepa0101/STUDENT-MENTOR/assets/66421923/eeeeea83-e52e-4785-84df-9f70888861ca)
+
 
 ****6. show the previously assigned mentor for a particular student****
 APIENDPOINT:
 https://student-mentor-2ic2.onrender.com/mentorName
-![allStudentsForAMentor](https://github.com/deepa0101/STUDENT-MENTOR/assets/66421923/eeeeea83-e52e-4785-84df-9f70888861ca)
-
+![getallMentorOvertime](https://github.com/deepa0101/STUDENT-MENTOR/assets/66421923/f93e0138-29e6-4126-bdab-06f649ff0964)
 
 
